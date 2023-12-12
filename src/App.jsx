@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <BrowserRouter>
         <div className="font-body">
           <Hero />
+          <AboutMe />
         </div>
     </BrowserRouter>
   );

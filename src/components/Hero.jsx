@@ -25,7 +25,7 @@ const Hero = () => {
             />
             Frontend Engineer
         </h1>
-        <p className="font-medium text-secondary text-md lg:text-xl">
+        <p className="font-medium text-secondary lg:text-xl">
           <span className="font-semibold">
             2+ years of experience in front-end development,
           </span>
