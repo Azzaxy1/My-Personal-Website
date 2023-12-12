@@ -22,10 +22,10 @@ const Hero = () => {
             decoding="async"
             alt="shape header"
             className="absolute -z-10 w-36 left-10"
-            />
-            Frontend Engineer
+          />
+          Frontend Engineer
         </h1>
-        <p className="font-medium text-secondary lg:text-xl">
+        <p className="font-medium text-gray-500 lg:text-xl 2xl:text-2xl">
           <span className="font-semibold">
             2+ years of experience in front-end development,
           </span>

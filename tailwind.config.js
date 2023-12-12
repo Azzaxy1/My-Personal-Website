@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         primary: "#0ea5e9",
-        secondary: "#6b7280",
+        secondary: "#1f2937",
       },
       container: true,
       fontFamily: {
@@ -15,6 +15,7 @@ export default {
   },
   plugins: [],
 };
+
 
 
 
