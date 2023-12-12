@@ -1,12 +1,13 @@
-import Header from "./components/Header";
+import { BrowserRouter } from "react-router-dom";
 import Hero from "./components/Hero";
 
 const App = () => {
   return (
-    <div className="font-body">
-      <Header />
-      <Hero />
-    </div>
+    <BrowserRouter>
+        <div className="font-body">
+          <Hero />
+        </div>
+    </BrowserRouter>
   );
 };
 
