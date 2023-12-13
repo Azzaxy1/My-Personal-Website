@@ -39,7 +39,7 @@ const Hero = () => {
               alt="logo"
               decoding="async"
               loading="lazy"
-              className="w-16 lg:w-24 mt-4 hover:transition-all hover:duration-150 hover:ease-linear hover:rotate-[15deg] hover:scale-105"
+              className="w-16 lg:w-24 mt-4 transition-all duration-300 hover:ease-linear hover:rotate-[15deg] hover:scale-105"
             />
           </Link>
           <Link to="https://github.com/Azzaxy1">
@@ -48,7 +48,7 @@ const Hero = () => {
               alt="logo"
               decoding="async"
               loading="lazy"
-              className="w-16 lg:w-24 mt-20 hover:transition-all hover:duration-150 hover:ease-linear hover:rotate-[15deg] hover:scale-105"
+              className="w-16 lg:w-24 mt-20 transition-all duration-300 hover:ease-linear hover:rotate-[15deg] hover:scale-105"
             />
           </Link>
           <Link to="mailto:abdurrohmanazis@gmail.com">
@@ -57,7 +57,7 @@ const Hero = () => {
               alt="logo"
               decoding="async"
               loading="lazy"
-              className="w-16 lg:w-24 mt-20 hover:transition-all hover:duration-150 hover:ease-linear hover:rotate-[15deg] hover:scale-105"
+              className="w-16 lg:w-24 mt-20 transition-all duration-300 hover:ease-linear hover:rotate-[15deg] hover:scale-105"
             />
           </Link>
           <Link to="https://medium.com/@azzaxy1">
@@ -66,7 +66,7 @@ const Hero = () => {
               alt="logo"
               decoding="async"
               loading="lazy"
-              className="w-16 lg:w-24 mt-4 hover:rotate-[15deg] hover:scale-105 hover:transition-all hover:duration-150 hover:ease-linear "
+              className="w-16 lg:w-24 mt-4 hover:rotate-[15deg] hover:scale-105 transition-all duration-300 hover:ease-linear "
             />
           </Link>
         </div>
