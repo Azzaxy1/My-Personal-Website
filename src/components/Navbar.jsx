@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="fixed left-0 lg:left-[25%] md:flex md:justify-center z-10 w-full md:w-[50%]  mx-auto bg-opacity-60">
       <div className="flex items-center justify-end px-4 py-5 md:shadow-md hover:md:shadow-xl md:bg-white md:rounded-full md:mt-5 md:bg-opacity-90 md:px-16 md:py-5">
         <div
-          className="cursor-pointer pe-4 lg:pe-0 lg:hidden"
+          className="px-2 py-2 bg-white border-2 rounded-lg cursor-pointer border-primary me-4 lg:pe-0 lg:hidden"
           onClick={() => setToggleNavbar(!toggleNavbar)}
         >
           {toggleNavbar ? <X /> : <Menu />}

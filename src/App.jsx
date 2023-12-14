@@ -3,16 +3,18 @@ import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
 import Project from "./components/Project";
 import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
 
 const App = () => {
   return (
     <BrowserRouter>
-        <div className="font-body">
+        <main className="font-body">
           <Navbar/>
           <Hero />
           <AboutMe />
           <Project/>
-        </div>
+          <Skills/>
+        </main>
     </BrowserRouter>
   );
 };

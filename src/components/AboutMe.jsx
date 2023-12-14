@@ -12,7 +12,7 @@ const AboutMe = () => {
 
   return (
     <section id="about">
-      <div className="container mx-auto">
+      <div className="">
         <div className="flex flex-wrap justify-start xl:justify-center">
           <div className="self-center w-full px-6 lg:w-[54%]">
             <div className="relative mb-2 lg:mb-5">

@@ -98,7 +98,7 @@ const CardProject = () => {
               {" "}
               Link Github
             </Link>
-            <span className="px-3 py-2 text-base rounded-lg text-white bg-[#345b81]">
+            <span className="px-2 mt-4 md:mt-0 py-[2px] md:py-1 text-base rounded-lg text-white bg-[#345b81]">
               • In Progress
             </span>
           </div>
