@@ -3,7 +3,7 @@ import CardExperience from "./CardExperience";
 
 const Experience = () => {
   return (
-    <section id="experience" className="min-h-screen bg-gray-800 py-14">
+    <section id="experience" className="bg-gray-800  py-14">
       <div>
         <div className="flex justify-center mb-8">
           <div className="self-center px-6 lg:w-[70%]">

@@ -3,18 +3,15 @@ import { Mail } from "lucide-react";
 import myPhoto from "../assets/my-photo.jpg";
 const Contact = () => {
   return (
-    <section
-      id="contact"
-      className="min-h-screen px-6 bg-gray-800 py-14 md:px-28 2xl:px-20"
-    >
+    <section id="contact" className="px-6 bg-gray-800 py-14 md:px-28 2xl:px-64">
       <div className="flex flex-col">
         <h1 className="mb-8 text-2xl font-semibold text-white md:text-5xl ">
           👋 Lets get Connected!
         </h1>
-        <p className="pb-5 text-5xl font-semibold text-white md:text-7xl">
+        <p className="pb-5 text-5xl font-semibold text-white md:text-7xl 2xl:text-8xl">
           Have any project ideas?
         </p>
-        <p className="text-5xl font-semibold text-white md:text-7xl">
+        <p className="text-5xl font-semibold text-white md:text-7xl 2xl:text-8xl">
           Ask something?
         </p>
       </div>
