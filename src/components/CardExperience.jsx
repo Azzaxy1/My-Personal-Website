@@ -2,7 +2,7 @@ import binarLogo from "../assets/binar-logo.png";
 
 const CardExperience = () => {
   return (
-    <section className="w-full px-6 md:px-28 2xl:px-20">
+    <section className="w-full px-6 md:px-28 2xl:px-64">
       <div className="flex flex-col px-6 py-10 bg-purple-800 border-2 border-purple-400 bg-opacity-30 md:flex-row rounded-xl">
         <div className="mb-6 md:mb-0 md:px-14">
           <img src={binarLogo} alt="binarLogo" width={60} className="md:w-56" />
