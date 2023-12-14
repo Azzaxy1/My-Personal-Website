@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Project from "./components/Project";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <AboutMe />
           <Project/>
           <Skills/>
+          <Experience/>
         </main>
     </BrowserRouter>
   );
