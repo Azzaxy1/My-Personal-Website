@@ -8,7 +8,10 @@ const Project = () => {
         <div className="flex justify-center mb-8">
           {/* Text Project */}
           <div className="self-center px-6 lg:w-[70%]">
-            <div className="relative flex justify-center mb-2 text-center lg:mb-5">
+            <div
+              data-aos="zoom-in-down"
+              className="relative flex justify-center mb-2 text-center lg:mb-5"
+            >
               <img
                 src={shape}
                 width={100}
@@ -18,7 +21,11 @@ const Project = () => {
                 🚀 Highlight Project
               </h1>
             </div>
-            <p className="text-sm text-center lg:text-xl 2xl:text-2xl text-secondary">
+            <p
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              className="text-sm text-center lg:text-xl 2xl:text-2xl text-secondary"
+            >
               These are some of the projects I have created. These projects have
               not only helped me build my portfolio, but also enhanced the
               skills I have developed.

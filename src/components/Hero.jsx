@@ -13,10 +13,17 @@ const Hero = () => {
       className="flex items-center md:pt-6 justify-center min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-300 via-white to-white "
     >
       <div className="text-center">
-        <h3 className="text-2xl lg:text-5xl font-extrabold text-[#375878] ">
+        <h3
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1200"
+          className="text-2xl lg:text-5xl font-extrabold text-[#375878] ">
           Abdurrohman Azis.
         </h3>
-        <h1 className="relative py-3 text-4xl font-bold lg:text-7xl text-primary">
+        <h1
+          data-aos="zoom-out-right"
+          className="relative py-3 text-4xl font-bold lg:text-7xl text-primary"
+        >
           <img
             src={shape}
             loading="lazy"
@@ -26,14 +33,17 @@ const Hero = () => {
           />
           Frontend Engineer
         </h1>
-        <p className="font-medium text-gray-500 lg:text-xl 2xl:text-2xl">
+        <p data-aos="fade-left" className="font-medium text-gray-500 lg:text-xl 2xl:text-2xl">
           <span className="font-semibold">
-            2+ years of experience in front-end development,
-          </span>
+            Interest in front-end development,
+          </span>{" "}
           using React.js for <br />
           developing a website and web applications.
         </p>
-        <div className="flex items-center justify-center gap-6 lg:gap-11">
+        <div
+          data-aos="fade-up"
+          className="flex items-center justify-center gap-6 lg:gap-11"
+        >
           <Link target="_blank" to="https://www.linkedin.com/in/azzaxy1/">
             <img
               src={linkedIn}

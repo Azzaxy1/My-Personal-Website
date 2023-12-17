@@ -4,7 +4,12 @@ import myPhoto from "../assets/my-photo.jpg";
 const Contact = () => {
   return (
     <section id="contact" className="px-6 bg-gray-800 py-14 md:px-28 2xl:px-64">
-      <div className="flex flex-col">
+      <div
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        className="flex flex-col"
+      >
         <h1 className="mb-8 text-2xl font-semibold text-white md:text-5xl ">
           👋 Lets get Connected!
         </h1>
@@ -15,7 +20,11 @@ const Contact = () => {
           Ask something?
         </p>
       </div>
-      <figure className="flex flex-col gap-5 mt-24 md:mt-16">
+      <figure
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        className="flex flex-col gap-5 mt-24 md:mt-16"
+      >
         <img
           src={myPhoto}
           alt="myPhoto"

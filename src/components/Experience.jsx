@@ -3,10 +3,10 @@ import CardExperience from "./CardExperience";
 
 const Experience = () => {
   return (
-    <section id="experience" className="bg-gray-800  py-14">
+    <section id="experience" className="bg-gray-800 py-14">
       <div>
         <div className="flex justify-center mb-8">
-          <div className="self-center px-6 lg:w-[70%]">
+          <div data-aos="zoom-in-down" className="self-center px-6 lg:w-[70%]">
             <div className="relative flex justify-center mb-2 lg:mb-5">
               <img
                 src={shape}
@@ -18,9 +18,9 @@ const Experience = () => {
               </h1>
             </div>
             <p className="text-sm text-center text-gray-400 lg:text-xl 2xl:text-2xl">
-              I have gained valuable experience by actively contributing to the
-              growth of an educational startup and interning at a reputable
-              software house, where I worked as a skilled front-end engineer.
+              I have gained valuable experience by actively participating in
+              various activities that have contributed to my growth as a
+              front-end developer.
             </p>
           </div>
         </div>

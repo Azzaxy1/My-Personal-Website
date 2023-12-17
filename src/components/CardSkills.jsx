@@ -15,7 +15,13 @@ import npmIcons from "../assets/icons/npm.svg";
 
 const CardSkills = () => {
   return (
-    <div className="flex flex-wrap justify-center mt-8 gap-11 md:gap-16">
+    <div
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0"
+      className="flex flex-wrap justify-center mt-8 gap-11 md:gap-16"
+    >
       <div className="px-4 hover:-translate-y-4 hover:shadow-primary cursor-pointer transition-all duration-500 py-4 md:px-9 md:py-9 rounded-md shadow-black bg-[#192d3e] shadow-lg">
         <img src={htmlIcons} alt="htmlIcons" width={50} className="md:w-20" />
       </div>

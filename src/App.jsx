@@ -1,4 +1,8 @@
 import { BrowserRouter } from "react-router-dom";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
 import Project from "./components/Project";
@@ -9,6 +13,12 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 const App = () => {
+    useEffect(() => {
+      Aos.init({
+        duration: 1000,
+      });
+    }, []);
+
   return (
     <BrowserRouter>
         <main className="font-body">
@@ -26,4 +36,6 @@ const App = () => {
 };
 
 export default App;
+
+
 

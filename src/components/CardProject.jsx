@@ -13,7 +13,11 @@ import project4 from "../assets/img-project/project4.png";
 const CardProject = () => {
   return (
     <>
-      <div className="max-w-sm mx-6 my-6 overflow-hidden transition-all duration-300 rounded-lg shadow-md cursor-pointer lg:max-w-lg 2xl:max-w-xl hover:shadow-lg hover:scale-105 hover:ease-linear">
+      <div
+        data-aos="fade-right"
+        data-aos-easing="ease-in-sine"
+        className="max-w-sm mx-6 my-6 overflow-hidden transition-all duration-300 rounded-lg shadow-md cursor-pointer lg:max-w-lg 2xl:max-w-xl hover:shadow-lg hover:scale-105 hover:ease-linear"
+      >
         <Link to="https://rentalcar-azis.vercel.app/">
           <img
             src={project1}
@@ -29,11 +33,17 @@ const CardProject = () => {
             <img src={bootstrapIcons} width={30} alt="" />
           </div>
           <Link to="https://github.com/Azzaxy1/Ch1-RentalCar-Botstrapp">
-            <p className="mt-3 text-base underline decoration-wavy text-primary">Link Github</p>
+            <p className="mt-3 text-base underline decoration-wavy text-primary">
+              Link Github
+            </p>
           </Link>
         </div>
       </div>
-      <div className="max-w-sm mx-6 my-6 overflow-hidden transition-all duration-300 rounded-lg shadow-md cursor-pointer lg:max-w-lg 2xl:max-w-xl hover:shadow-lg hover:scale-105 hover:ease-linear">
+      <div
+        data-aos="fade-left"
+        data-aos-easing="ease-in-sine"
+        className="max-w-sm mx-6 my-6 overflow-hidden transition-all duration-300 rounded-lg shadow-md cursor-pointer lg:max-w-lg 2xl:max-w-xl hover:shadow-lg hover:scale-105 hover:ease-linear"
+      >
         <Link to="https://todo-list-app-azis.vercel.app/">
           <img
             src={project2}
@@ -49,11 +59,17 @@ const CardProject = () => {
             <img src={tailwindIcons} width={30} alt="" />
           </div>
           <Link to="https://github.com/Azzaxy1/Ch3-TodoList-App-React">
-            <p className="mt-3 text-base underline decoration-wavy text-primary">Link Github</p>
+            <p className="mt-3 text-base underline decoration-wavy text-primary">
+              Link Github
+            </p>
           </Link>
         </div>
       </div>
-      <div className="max-w-sm mx-6 my-6 overflow-hidden transition-all duration-300 rounded-lg shadow-md cursor-pointer lg:max-w-lg 2xl:max-w-xl hover:shadow-lg hover:scale-105 hover:ease-linear">
+      <div
+        data-aos="fade-right"
+        data-aos-easing="ease-in-sine"
+        className="max-w-sm mx-6 my-6 overflow-hidden transition-all duration-300 rounded-lg shadow-md cursor-pointer lg:max-w-lg 2xl:max-w-xl hover:shadow-lg hover:scale-105 hover:ease-linear"
+      >
         <Link to="https://project-6-team-6-redux.vercel.app/id">
           <img
             src={project3}
@@ -70,11 +86,17 @@ const CardProject = () => {
             <img src={reduxIcons} width={30} alt="" />
           </div>
           <Link to="https://github.com/Azzaxy1/Ch7-MovieApp-React-Redux">
-            <p className="mt-3 text-base underline decoration-wavy text-primary">Link Github</p>
+            <p className="mt-3 text-base underline decoration-wavy text-primary">
+              Link Github
+            </p>
           </Link>
         </div>
       </div>
-      <div className="max-w-sm mx-6 my-6 overflow-hidden transition-all duration-300 rounded-lg shadow-md cursor-pointer lg:max-w-lg 2xl:max-w-xl hover:shadow-lg hover:scale-105 hover:ease-linear">
+      <div
+        data-aos="fade-left"
+        data-aos-easing="ease-in-sine"
+        className="max-w-sm mx-6 my-6 overflow-hidden transition-all duration-300 rounded-lg shadow-md cursor-pointer lg:max-w-lg 2xl:max-w-xl hover:shadow-lg hover:scale-105 hover:ease-linear"
+      >
         <Link to="https://last-king-academy-staging.pemudasukses.tech/">
           <img
             src={project4}
