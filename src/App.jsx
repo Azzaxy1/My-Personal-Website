@@ -13,29 +13,27 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 const App = () => {
-    useEffect(() => {
-      Aos.init({
-        duration: 1000,
-      });
-    }, []);
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
 
   return (
     <BrowserRouter>
-        <main className="font-body">
-          <Navbar/>
-          <Hero />
-          <AboutMe />
-          <Project/>
-          <Skills/>
-          <Experience/>
-          <Contact/>
-          <Footer/>
-        </main>
+      <main className="font-body">
+        <Navbar />
+        <Hero />
+        <AboutMe />
+        <Project />
+        <Skills />
+        <Experience />
+        <Contact />
+        <Footer />
+      </main>
     </BrowserRouter>
   );
 };
 
 export default App;
-
-
 

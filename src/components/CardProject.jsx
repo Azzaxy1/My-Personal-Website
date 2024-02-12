@@ -97,7 +97,7 @@ const CardProject = () => {
         data-aos-easing="ease-in-sine"
         className="max-w-sm mx-6 my-6 overflow-hidden transition-all duration-300 rounded-lg shadow-md cursor-pointer lg:max-w-lg 2xl:max-w-xl hover:shadow-lg hover:scale-105 hover:ease-linear"
       >
-        <Link to="https://last-king-academy-staging.pemudasukses.tech/">
+        <Link to="https://last-king-academy.vercel.app/">
           <img
             src={project4}
             alt="Project4"
@@ -120,9 +120,6 @@ const CardProject = () => {
               {" "}
               Link Github
             </Link>
-            <span className="px-2 mt-4 md:mt-0 py-[2px] md:py-1 text-base rounded-lg text-white bg-[#345b81]">
-              • In Progress
-            </span>
           </div>
         </div>
       </div>
