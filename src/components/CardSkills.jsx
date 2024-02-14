@@ -12,7 +12,6 @@ import vsCodeIcons from "../assets/icons/vscode.svg";
 import githubIcons from "../assets/icons/github.svg";
 import npmIcons from "../assets/icons/npm.svg";
 
-
 const CardSkills = () => {
   return (
     <div
@@ -78,6 +77,6 @@ const CardSkills = () => {
       </div>
     </div>
   );
-}
+};
 
-export default CardSkills
+export default CardSkills;

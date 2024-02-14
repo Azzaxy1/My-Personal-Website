@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <main className="font-body">
+      <main className="overflow-x-hidden font-body">
         <Navbar />
         <Hero />
         <AboutMe />

@@ -10,14 +10,15 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex items-center md:pt-6 justify-center min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-300 via-white to-white "
+      className="flex items-center  md:pt-6 justify-center min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-300 via-white to-white "
     >
       <div className="text-center">
         <h3
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1200"
-          className="text-2xl lg:text-5xl font-extrabold text-[#375878] ">
+          className="text-2xl lg:text-5xl font-extrabold text-[#375878] "
+        >
           Abdurrohman Azis.
         </h3>
         <h1
@@ -33,7 +34,10 @@ const Hero = () => {
           />
           Frontend Engineer
         </h1>
-        <p data-aos="fade-left" className="font-medium text-gray-500 lg:text-xl 2xl:text-2xl">
+        <p
+          data-aos="fade-left"
+          className="font-medium text-gray-500 lg:text-xl 2xl:text-2xl"
+        >
           <span className="font-semibold">
             Interest in front-end development,
           </span>{" "}
