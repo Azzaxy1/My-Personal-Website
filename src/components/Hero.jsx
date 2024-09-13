@@ -41,7 +41,12 @@ const Hero = () => {
           <span className="font-semibold">
             Interest in front-end development,
           </span>{" "}
-          using React.js for <br />
+          using
+          <span className="font-semibold">
+            {" "}
+            React.js, Next Js, and TypeScript
+          </span>{" "}
+          for <br />
           developing a website and web applications.
         </p>
         <div
