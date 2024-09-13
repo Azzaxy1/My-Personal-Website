@@ -1,5 +1,6 @@
 import aboutIcons from "../assets/icons/about-img.svg";
 import shape from "../assets/shape.png";
+import CV from "@/assets/cv-abdurrohmanazis.pdf";
 
 const AboutMe = () => {
   return (
@@ -31,6 +32,14 @@ const AboutMe = () => {
               TypeScript. My skills include problem solving, critical thinking,
               time work, time management, and a desire to explore new knowledge.
             </p>
+            <a href={CV} download>
+              <button
+                data-aos="fade-up-right"
+                className="px-4 py-2 mt-4 text-white rounded-xl bg-slate-700"
+              >
+                Download CV
+              </button>
+            </a>
           </div>
           <div data-aos="fade-up-left" className="px-6 lg:px-7">
             <img src={aboutIcons} alt="" width={350} />

@@ -16,7 +16,7 @@ const Project = ({ section }) => {
   return (
     <section id="project" className={` ${section ? "py-16" : "pb-16 pt-8 "}`}>
       <div className="container mx-auto">
-        <div className="px-6 md:px-28 xl:px-44">
+        <div className="px-6 md:px-28 2xl:px-44">
           {!section && (
             <button onClick={handleBack}>
               <ArrowBigLeft
@@ -87,7 +87,7 @@ const Project = ({ section }) => {
           className={`mt-2 text-center ${section ? "block" : "hidden"}`}
         >
           <Link to="/project">
-            <button className="px-4 py-2 text-white rounded-xl bg-primary hover:bg-[#318bb4]">
+            <button className="px-4 py-2 text-white rounded-xl bg-[#318bb4] hover:bg-[#357998]">
               More Project
             </button>
           </Link>
