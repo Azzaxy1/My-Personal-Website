@@ -1,6 +1,7 @@
 import { Mail } from "lucide-react";
 
 import myPhoto from "../assets/my-photo.jpg";
+
 const Contact = () => {
   return (
     <section id="contact" className="px-6 bg-gray-800 py-14 md:px-28 2xl:px-64">

@@ -1,6 +1,6 @@
 import shape from "../assets/shape.png";
 import CardExperience from "./CardExperience";
-import experience from "../utils/index";
+import { experience } from "../utils/index";
 
 const Experience = () => {
   return (

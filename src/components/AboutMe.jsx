@@ -27,9 +27,9 @@ const AboutMe = () => {
             >
               I am a Bachelor of Informatics Engineering student at Banten Jaya
               University. I have a strong interest in Web Development,
-              especially Front End Development using React Js. My skills include
-              problem solving, critical thinking, time work, time management,
-              and a desire to explore new knowledge.
+              especially Front End Development using React Js, Next Js and
+              TypeScript. My skills include problem solving, critical thinking,
+              time work, time management, and a desire to explore new knowledge.
             </p>
           </div>
           <div data-aos="fade-up-left" className="px-6 lg:px-7">
