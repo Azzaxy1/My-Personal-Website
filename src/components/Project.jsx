@@ -16,13 +16,13 @@ const Project = ({ section }) => {
   return (
     <section id="project" className={` ${section ? "py-16" : "pb-16 pt-8 "}`}>
       <div className="container mx-auto">
-        <div className="px-32 ">
+        <div className="px-6 md:px-28 xl:px-44">
           {!section && (
             <button onClick={handleBack}>
               <ArrowBigLeft
                 width={40}
                 height={40}
-                className="text-primary hover:text-[#318bb4]"
+                className="text-primary hover:text-[#318bb4] w-[50px] h-[50px]"
               />
             </button>
           )}
