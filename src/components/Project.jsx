@@ -1,11 +1,32 @@
+import { Link, useNavigate } from "react-router-dom";
 import shape from "../assets/shape.png";
 import CardProject from "./CardProject";
 import { projects } from "@/utils";
+import PropTypes from "prop-types";
+import { ArrowBigLeft } from "lucide-react";
 
-const Project = () => {
+const Project = ({ section }) => {
+  const navigate = useNavigate();
+  const sliceProject = projects.slice(0, 4);
+
+  const handleBack = () => {
+    navigate(-1);
+  };
+
   return (
-    <section id="project" className="py-20">
+    <section id="project" className={` ${section ? "py-16" : "pb-16 pt-8 "}`}>
       <div className="container mx-auto">
+        <div className="px-32 ">
+          {!section && (
+            <button onClick={handleBack}>
+              <ArrowBigLeft
+                width={40}
+                height={40}
+                className="text-primary hover:text-[#318bb4]"
+              />
+            </button>
+          )}
+        </div>
         <div className="flex justify-center mb-8">
           {/* Text Project */}
           <div className="self-center px-6 lg:w-[70%]">
@@ -35,22 +56,49 @@ const Project = () => {
         </div>
         {/* Card Project */}
         <div className="flex flex-wrap justify-center">
-          {projects.map((project, index) => (
-            <CardProject
-              key={index}
-              id={project.id}
-              liveLink={project.liveLink}
-              image={project.image}
-              name={project.name}
-              description={project.description}
-              technologies={project.technologies}
-              githubLink={project.githubLink}
-            />
-          ))}
+          {section
+            ? sliceProject.map((project, index) => (
+                <CardProject
+                  key={index}
+                  id={project.id}
+                  liveLink={project.liveLink}
+                  image={project.image}
+                  name={project.name}
+                  description={project.description}
+                  technologies={project.technologies}
+                  githubLink={project.githubLink}
+                />
+              ))
+            : projects.map((project, index) => (
+                <CardProject
+                  key={index}
+                  id={project.id}
+                  liveLink={project.liveLink}
+                  image={project.image}
+                  name={project.name}
+                  description={project.description}
+                  technologies={project.technologies}
+                  githubLink={project.githubLink}
+                />
+              ))}
+        </div>
+        <div
+          data-aos="fade-out"
+          className={`mt-2 text-center ${section ? "block" : "hidden"}`}
+        >
+          <Link to="/project">
+            <button className="px-4 py-2 text-white rounded-xl bg-primary hover:bg-[#318bb4]">
+              More Project
+            </button>
+          </Link>
         </div>
       </div>
     </section>
   );
+};
+
+Project.propTypes = {
+  section: PropTypes.bool,
 };
 
 export default Project;
