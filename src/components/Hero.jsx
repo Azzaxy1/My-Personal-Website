@@ -53,7 +53,10 @@ const Hero = () => {
           data-aos="fade-up"
           className="flex items-center justify-center gap-6 lg:gap-11"
         >
-          <Link target="_blank" to="https://www.linkedin.com/in/azzaxy1/">
+          <Link
+            target="_blank"
+            to="https://www.linkedin.com/in/abdurrohmanazis/"
+          >
             <img
               src={linkedIn}
               alt="logo"
