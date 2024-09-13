@@ -1,4 +1,4 @@
-import aboutIcons from "../assets/about-img.svg";
+import aboutIcons from "../assets/icons/about-img.svg";
 import shape from "../assets/shape.png";
 
 const AboutMe = () => {

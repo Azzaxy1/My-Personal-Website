@@ -1,8 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [toggleNavbar, setToggleNavbar] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: [0.1, 0.25, 0.5, 0.75] } // Monitor beberapa tingkat visibilitas
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
+
+  const isActive = (id) =>
+    activeSection === id ? "text-sky-500" : "text-secondary text-opacity-70";
 
   return (
     <nav className="fixed left-0 lg:left-[25%] md:flex md:justify-center z-50 w-full md:w-[50%]  mx-auto bg-opacity-60">
@@ -15,38 +39,35 @@ const Navbar = () => {
         </div>
         {/* Desktop Navbar */}
         <div className="flex-row hidden gap-10 font-medium lg:flex">
-          <a
-            className="text-secondary text-opacity-70 hover:text-sky-500"
-            href="#home"
-          >
+          <a className={`${isActive("home")} hover:text-sky-500`} href="#home">
             Home
           </a>
           <a
-            className="text-secondary text-opacity-70 hover:text-sky-500"
+            className={`${isActive("about")} hover:text-sky-500`}
             href="#about"
           >
             About
           </a>
           <a
-            className="text-secondary text-opacity-70 hover:text-sky-500"
+            className={`${isActive("project")} hover:text-sky-500`}
             href="#project"
           >
             Project
           </a>
           <a
-            className="text-secondary text-opacity-70 hover:text-sky-500"
+            className={`${isActive("skills")} hover:text-sky-500`}
             href="#skills"
           >
             Skills
           </a>
           <a
-            className="text-secondary text-opacity-70 hover:text-sky-500"
+            className={`${isActive("experience")} hover:text-sky-500`}
             href="#experience"
           >
             Experience
           </a>
           <a
-            className="text-secondary text-opacity-70 hover:text-sky-500"
+            className={`${isActive("contact")} hover:text-sky-500`}
             href="#contact"
           >
             Contact
@@ -62,32 +83,32 @@ const Navbar = () => {
       >
         <ul className="text-lg">
           <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
-            <a className="text-secondary text-opacity-70" href="#home">
+            <a className={`${isActive("home")}`} href="#home">
               Home
             </a>
           </li>
           <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
-            <a className="text-secondary text-opacity-70" href="#about">
+            <a className={`${isActive("about")}`} href="#about">
               About
             </a>
           </li>
           <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
-            <a className="text-secondary text-opacity-70" href="#project">
+            <a className={`${isActive("project")}`} href="#project">
               Project
             </a>
           </li>
           <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
-            <a className="text-secondary text-opacity-70" href="#skills">
+            <a className={`${isActive("skills")}`} href="#skills">
               Skills
             </a>
           </li>
           <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
-            <a className="text-secondary text-opacity-70" href="#experience">
+            <a className={`${isActive("experience")}`} href="#experience">
               Experience
             </a>
           </li>
           <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
-            <a className="text-secondary text-opacity-70" href="#contact">
+            <a className={`${isActive("contact")}`} href="#contact">
               Contact
             </a>
           </li>

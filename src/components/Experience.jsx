@@ -1,5 +1,6 @@
-import shape from"../assets/shape.png"
+import shape from "../assets/shape.png";
 import CardExperience from "./CardExperience";
+import experience from "../utils/index";
 
 const Experience = () => {
   return (
@@ -25,13 +26,23 @@ const Experience = () => {
           </div>
         </div>
         <div>
-          <div className="flex flex-wrap justify-center">
-            <CardExperience />
+          <div className="flex flex-wrap justify-center gap-3">
+            {experience.map((item, index) => (
+              <CardExperience
+                key={index}
+                image={item.image}
+                name={item.name}
+                companyName={item.companyName}
+                date={item.date}
+                position={item.position}
+                description={item.description}
+              />
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default Experience
+export default Experience;
