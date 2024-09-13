@@ -23,6 +23,7 @@ import project1 from "../assets/img-project/project1.jpeg";
 import KKM01 from "../assets/img-project/kkm01.png";
 import DiscusZone from "../assets/img-project/discus-zone.png";
 import PersonalWeb from "../assets/img-project/personal-web.png";
+import Azis from "../assets/img-project/abdurrohman-azis.png";
 import NotesHive from "../assets/img-project/note-hive.png";
 import JobFinder from "../assets/img-project/job-finder.png";
 import project2 from "../assets/img-project/project2.jpeg";
@@ -125,6 +126,15 @@ const projects = [
     technologies: [htmlIcons, bootstrapIcons],
     liveLink: "https://rentalcar-azis.vercel.app/",
     githubLink: "https://github.com/Azzaxy1/Ch1-RentalCar-Botstrapp",
+  },
+  {
+    id: 10,
+    name: "Abdurrohman Azis",
+    image: Azis,
+    description: "Personal Website",
+    technologies: [react, tailwindIcons],
+    liveLink: "https://abdurrohmanazis.vercel.app/",
+    githubLink: "https://github.com/Azzaxy1/Portfolio-ReactTailwind",
   },
 ];
 

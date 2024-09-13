@@ -1,5 +1,6 @@
 import shape from "../assets/shape.png";
 import CardProject from "./CardProject";
+import { projects } from "@/utils";
 
 const Project = () => {
   return (
@@ -34,7 +35,18 @@ const Project = () => {
         </div>
         {/* Card Project */}
         <div className="flex flex-wrap justify-center">
-          <CardProject />
+          {projects.map((project, index) => (
+            <CardProject
+              key={index}
+              id={project.id}
+              liveLink={project.liveLink}
+              image={project.image}
+              name={project.name}
+              description={project.description}
+              technologies={project.technologies}
+              githubLink={project.githubLink}
+            />
+          ))}
         </div>
       </div>
     </section>

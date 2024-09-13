@@ -8,7 +8,6 @@ const CardExperience = ({
   position,
   description,
 }) => {
-  console.log(name);
   return (
     <section className="w-full px-6 md:px-28 2xl:px-64">
       <div
