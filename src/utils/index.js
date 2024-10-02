@@ -15,6 +15,7 @@ import NodeIcons from "../assets/icons/node-js.svg";
 import ExpressIcons from "../assets/icons/express.svg";
 import NextUIIcon from "../assets/icons/next-ui.png";
 import CypressIcon from "../assets/icons/cypress.webp";
+import MongoDB from "../assets/mongo.png";
 
 import BinarLogo from "../assets/binar-logo.png";
 import DicodingLogo from "../assets/dicoding.webp";
@@ -40,9 +41,10 @@ const icons = [
   { id: 7, image: NextIcons, name: "Next.js" },
   { id: 8, image: NodeIcons, name: "Node.js" },
   { id: 9, image: ExpressIcons, name: "Express.js" },
-  { id: 10, image: postmanIcons, name: "Postman" },
-  { id: 11, image: figmaIcons, name: "Figma" },
-  { id: 12, image: npmIcons, name: "npm" },
+  { id: 10, image: MongoDB, name: "Mongo DB" },
+  { id: 11, image: postmanIcons, name: "Postman" },
+  { id: 12, image: figmaIcons, name: "Figma" },
+  { id: 13, image: npmIcons, name: "npm" },
 ];
 
 const projects = [
