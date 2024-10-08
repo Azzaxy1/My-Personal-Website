@@ -5,7 +5,7 @@ const icons = [
   { id: 2, image: imageTech.TSIcons, name: "TypeScript" },
   { id: 3, image: imageTech.bootstrapIcons, name: "Bootstrap" },
   { id: 4, image: imageTech.tailwindIcons, name: "Tailwind CSS" },
-  { id: 5, image: imageTech.react, name: "React" },
+  { id: 5, image: imageTech.reactIcons, name: "React" },
   { id: 6, image: imageTech.reduxIcons, name: "Redux" },
   { id: 7, image: imageTech.NextIcons, name: "Next.js" },
   { id: 8, image: imageTech.NodeIcons, name: "Node.js" },

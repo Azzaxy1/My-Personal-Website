@@ -1,9 +1,10 @@
+import Marquee from "react-fast-marquee";
 import shape from "../assets/shape.png";
 import CardSkills from "./CardSkills";
 
 const Skills = () => {
   return (
-    <section id="skills" className="bg-gray-800 py-14">
+    <section id="skills" className="bg-gray-800 pt-14">
       <div className="container px-6 mx-auto md:px-28 2xl:px-20">
         <div className="self-center w-full lg:w-[60%]">
           <div className="relative mb-2 lg:mb-5">
@@ -28,10 +29,10 @@ const Skills = () => {
             that I have developed and honed.
           </p>
         </div>
-        <div className="flex items-center justify-center mx-auto">
-          <CardSkills />
-        </div>
       </div>
+      <Marquee>
+        <CardSkills />
+      </Marquee>
     </section>
   );
 };
