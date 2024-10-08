@@ -3,7 +3,7 @@ import shape from "../assets/shape.png";
 import CardProject from "./CardProject";
 import { projects } from "@/utils";
 import PropTypes from "prop-types";
-import { ArrowBigLeft } from "lucide-react";
+import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
 
 const Project = ({ section }) => {
   const navigate = useNavigate();
@@ -17,15 +17,7 @@ const Project = ({ section }) => {
     <section id="project" className={` ${section ? "py-16" : "pb-16 pt-8 "}`}>
       <div className="container mx-auto">
         <div className="px-6 md:px-28 2xl:px-44">
-          {!section && (
-            <button onClick={handleBack}>
-              <ArrowBigLeft
-                width={40}
-                height={40}
-                className="text-primary hover:text-[#318bb4] w-[50px] h-[50px]"
-              />
-            </button>
-          )}
+          {!section && <button onClick={handleBack}></button>}
         </div>
         <div className="flex justify-center mb-8">
           {/* Text Project */}
@@ -82,13 +74,31 @@ const Project = ({ section }) => {
                 />
               ))}
         </div>
-        <div
-          data-aos="fade-out"
-          className={`mt-2 text-center ${section ? "block" : "hidden"}`}
-        >
-          <Link to="/project">
-            <button className="px-4 py-2 text-white rounded-xl bg-[#318bb4] hover:bg-[#357998]">
-              More Project
+        <div data-aos="fade-out" className={`mt-2 text-center`}>
+          <Link
+            to={!section ? "/" : "/project"}
+            className="flex justify-center"
+          >
+            <button className="flex items-center justify-center px-4 py-2 text-white rounded-xl bg-[#318bb4] hover:bg-[#357998]">
+              {!section ? (
+                <>
+                  <ArrowBigLeft
+                    width={25}
+                    height={25}
+                    className="inline-block text-white"
+                  />
+                  Back to Home
+                </>
+              ) : (
+                <>
+                  More Project
+                  <ArrowBigRight
+                    width={25}
+                    height={25}
+                    className="inline-block text-white"
+                  />
+                </>
+              )}
             </button>
           </Link>
         </div>
