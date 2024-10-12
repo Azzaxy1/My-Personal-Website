@@ -94,8 +94,8 @@ const projects = [
     image: imageProjects.TodoZen,
     description: "Todo List App",
     technologies: [imageTech.react, imageTech.tailwindIcons],
-    liveLink: "https://todo-list-app-azis.vercel.app/",
-    githubLink: "https://github.com/Azzaxy1/Ch3-TodoList-App-React",
+    liveLink: "https://todoZen1.vercel.app/",
+    githubLink: "https://github.com/Azzaxy1/todoZen",
   },
   {
     id: 8,

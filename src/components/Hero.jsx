@@ -4,7 +4,7 @@ import linkedIn from "../assets/linkedIn.webp";
 import github from "../assets/github.webp";
 import email from "../assets/email.webp";
 import medium from "../assets/medium.webp";
-import shape from "../assets/shape.png";
+import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   return (
@@ -21,21 +21,26 @@ const Hero = () => {
         >
           Abdurrohman Azis.
         </h3>
-        <div className="relative">
-          <h1
-            data-aos="zoom-out-right"
-            className="py-3 text-4xl font-bold sm:text-5xl md:text-5xl lg:text-7xl text-primary"
-          >
-            <img
-              src={shape}
-              loading="lazy"
-              decoding="async"
-              alt="shape header"
-              className="absolute -z-10 w-36 md:w-52 left-10 sm:left-20 md:left-14 lg:left-1 xl:left-20 2xl:left-[17rem]"
-            />
-            Fullstack Engineer
-          </h1>
-        </div>
+
+        <h1
+          data-aos="zoom-out-right"
+          className="py-3 text-4xl font-bold sm:text-5xl md:text-5xl lg:text-6xl 2xl:text-7xl text-primary"
+        >
+          <Typewriter
+            words={[
+              "Front End Engineer",
+              "Back End Engineer",
+              "Fullstack Engineer",
+              "Web Engineer",
+              "Software Engineer",
+            ]}
+            loop={false}
+            cursor
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </h1>
         <p
           data-aos="fade-left"
           className="text-base font-medium text-gray-500 sm:text-lg md:text-xl 2xl:text-2xl"
