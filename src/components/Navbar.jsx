@@ -36,7 +36,11 @@ const Navbar = () => {
           className="px-2 py-2 bg-white border-2 rounded-lg cursor-pointer border-primary me-4 lg:pe-0 md:hidden"
           onClick={() => setToggleNavbar(!toggleNavbar)}
         >
-          {toggleNavbar ? <MdRestaurantMenu /> : <FaHamburger />}
+          {toggleNavbar ? (
+            <MdRestaurantMenu className="w-[25px] h-[25px]" />
+          ) : (
+            <FaHamburger className="w-[25px] h-[25px]" />
+          )}
         </div>
         {/* Desktop Navbar */}
         <div className="flex-row hidden gap-10 font-medium md:flex">
