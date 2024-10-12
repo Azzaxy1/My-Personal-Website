@@ -15,12 +15,12 @@ const CardProject = ({
       <div
         data-aos={id % 2 === 0 ? "fade-left" : "fade-right"}
         data-aos-easing="ease-in-sine"
-        className="max-w-sm mx-6 my-6 overflow-hidden transition-all duration-300 rounded-lg shadow-md lg:max-w-lg 2xl:max-w-xl hover:shadow-lg hover:scale-105 hover:ease-linear"
+        className="max-w-sm mx-6 my-6 overflow-hidden transition-all duration-300 rounded-lg shadow-md sm:max-w-lg md:max-w-xl lg:max-w-lg 2xl:max-w-xl hover:shadow-lg hover:scale-105 hover:ease-linear"
       >
         <Link to={liveLink} target="_blank">
           <img
             src={image}
-            alt=""
+            alt={name}
             className="p-3 border-gray-300 cursor-pointer rounded-2xl"
           />
         </Link>

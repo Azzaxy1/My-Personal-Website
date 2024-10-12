@@ -20,16 +20,16 @@ const Project = ({ section }) => {
               <img
                 src={shape}
                 width={100}
-                className="absolute left-16 lg:left-[156px] -z-10 top-2 lg:w-48 "
+                className="absolute left-16 sm:left-40 md:left-52 lg:left-28 xl:left-48 2xl:left-72 -z-10 top-2 lg:w-48 "
               />
-              <h1 className="font-bold text-left text-2xl lg:text-5xl text-[#357998]">
+              <h1 className="font-bold text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#357998]">
                 🚀 Highlight Project
               </h1>
             </div>
             <p
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
-              className="text-sm text-center lg:text-xl 2xl:text-2xl text-secondary"
+              className="text-sm text-center sm:text-base md:text-base lg:text-xl 2xl:text-2xl text-secondary"
             >
               These are some of the projects I have created. These projects have
               not only helped me build my portfolio, but also enhanced the

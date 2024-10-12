@@ -26,10 +26,10 @@ const AboutMe = () => {
             className="text-sm text-left sm:text-base md:text-base lg:text-xl 2xl:text-2xl text-secondary"
           >
             I am a Bachelor of Informatics Engineering student at Banten Jaya
-            University. I have a strong interest in Web Development, especially
-            Front End Development using React Js, Next Js and TypeScript. My
-            skills include problem solving, critical thinking, time work, time
-            management, and a desire to explore new knowledge.
+            University. I have a strong interest in Web Development, using
+            Next.Js, Express.Js and TypeScript. My skills include problem
+            solving, critical thinking, time work, time management, and a desire
+            to explore new knowledge.
           </p>
           <a href={CV} download>
             <button
