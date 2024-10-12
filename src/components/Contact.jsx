@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { IoMailOutline } from "react-icons/io5";
 
 import myPhoto from "../assets/my-photo.jpg";
 
@@ -34,7 +34,7 @@ const Contact = () => {
         />
         <figcaption className="text-xl text-white">Contact me via :</figcaption>
         <div className="flex items-center gap-3 pb-3 border-b-2 border-white w-fit">
-          <Mail className="text-white " />
+          <IoMailOutline className="text-white w-[25px] h-[25px]" />
           <a
             className="-mt-1 text-lg text-white"
             href="mailto:abdurrohmanazis@gmail.com"

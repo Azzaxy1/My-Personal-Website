@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { FaHamburger } from "react-icons/fa";
+import { MdRestaurantMenu } from "react-icons/md";
 
 const Navbar = () => {
   const [toggleNavbar, setToggleNavbar] = useState(false);
@@ -35,7 +36,7 @@ const Navbar = () => {
           className="px-2 py-2 bg-white border-2 rounded-lg cursor-pointer border-primary me-4 lg:pe-0 md:hidden"
           onClick={() => setToggleNavbar(!toggleNavbar)}
         >
-          {toggleNavbar ? <X /> : <Menu />}
+          {toggleNavbar ? <MdRestaurantMenu /> : <FaHamburger />}
         </div>
         {/* Desktop Navbar */}
         <div className="flex-row hidden gap-10 font-medium md:flex">

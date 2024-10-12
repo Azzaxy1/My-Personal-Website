@@ -3,7 +3,7 @@ import shape from "../assets/shape.png";
 import CardProject from "./CardProject";
 import { projects } from "@/utils";
 import PropTypes from "prop-types";
-import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
+import { LuArrowBigLeft, LuArrowBigRight } from "react-icons/lu";
 
 const Project = ({ section }) => {
   const sliceProject = projects.slice(0, 4);
@@ -73,20 +73,20 @@ const Project = ({ section }) => {
             <button className="flex items-center justify-center px-4 py-2 text-white rounded-xl bg-[#318bb4] hover:bg-[#357998]">
               {!section ? (
                 <>
-                  <ArrowBigLeft
+                  <LuArrowBigLeft
                     width={25}
                     height={25}
-                    className="inline-block text-white"
+                    className="inline-block text-white w-[28px] h-[28px]"
                   />
                   Back to Home
                 </>
               ) : (
                 <>
                   More Project
-                  <ArrowBigRight
+                  <LuArrowBigRight
                     width={25}
                     height={25}
-                    className="inline-block text-white"
+                    className="inline-block text-white w-[28px] h-[28px]"
                   />
                 </>
               )}
