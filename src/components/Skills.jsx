@@ -16,14 +16,14 @@ const Skills = () => {
             />
             <h1
               data-aos="zoom-in-up"
-              className="text-3xl font-bold text-left text-white lg:text-5xl"
+              className="text-2xl font-bold text-left text-white lg:text-5xl sm:text-3xl md:text-4xl "
             >
               🎯 Tech Stack
             </h1>
           </div>
           <p
             data-aos="fade-up-right"
-            className="text-sm text-left text-gray-400 lg:text-xl 2xl:text-2xl"
+            className="text-sm text-left text-gray-400 lg:text-xl 2xl:text-2xl sm:text-base md:text-lg"
           >
             I am someone who enjoys seeking challenges. Here are a few skills
             that I have developed and honed.
