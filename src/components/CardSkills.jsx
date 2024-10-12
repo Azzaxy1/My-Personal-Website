@@ -12,9 +12,9 @@ const CardSkills = () => {
       {icons.map((icon, index) => (
         <div
           key={index}
-          className="relative px-4 py-4 transition-all duration-500 rounded-md cursor-pointer group hover:-translate-y-4 hover:shadow-primary md:px-9 md:py-9"
+          className="relative px-4 py-4 transition-all duration-500 rounded-md cursor-pointer group hover:-translate-y-4 hover:shadow-primary md:px-1 md:py-9"
         >
-          <span className="absolute top-0 px-2 py-1 mb-2 text-xs text-center text-white transition-opacity transform -translate-x-1/2 bg-gray-700 rounded opacity-0 left-[4.3rem] group-hover:opacity-100 whitespace-nowrap">
+          <span className="absolute top-0 px-2 py-1 mb-2 text-xs text-center text-white transition-opacity transform -translate-x-1/2 bg-gray-700 rounded opacity-0 left-[2.8rem] group-hover:opacity-100 whitespace-nowrap">
             {icon.name}
           </span>
           <img
