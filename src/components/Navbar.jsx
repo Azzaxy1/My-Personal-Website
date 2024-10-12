@@ -82,36 +82,36 @@ const Navbar = () => {
         } xl:hidden bg-white text-center`}
       >
         <ul className="text-lg">
-          <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
-            <a className={`${isActive("home")}`} href="#home">
+          <a className={`${isActive("home")}`} href="#home">
+            <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
               Home
-            </a>
-          </li>
-          <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
-            <a className={`${isActive("about")}`} href="#about">
+            </li>
+          </a>
+          <a className={`${isActive("about")}`} href="#about">
+            <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
               About
-            </a>
-          </li>
-          <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
-            <a className={`${isActive("project")}`} href="#project">
+            </li>
+          </a>
+          <a className={`${isActive("project")}`} href="#project">
+            <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
               Project
-            </a>
-          </li>
-          <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
-            <a className={`${isActive("skills")}`} href="#skills">
+            </li>
+          </a>
+          <a className={`${isActive("skills")}`} href="#skills">
+            <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
               Skills
-            </a>
-          </li>
-          <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
-            <a className={`${isActive("experience")}`} href="#experience">
+            </li>
+          </a>
+          <a className={`${isActive("experience")}`} href="#experience">
+            <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
               Experience
-            </a>
-          </li>
-          <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
-            <a className={`${isActive("contact")}`} href="#contact">
+            </li>
+          </a>
+          <a className={`${isActive("contact")}`} href="#contact">
+            <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
               Contact
-            </a>
-          </li>
+            </li>
+          </a>
         </ul>
       </div>
     </nav>
