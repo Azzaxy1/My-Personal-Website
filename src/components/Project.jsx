@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import shape from "../assets/shape.png";
 import CardProject from "./CardProject";
 import { projects } from "@/utils";
@@ -6,21 +6,12 @@ import PropTypes from "prop-types";
 import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
 
 const Project = ({ section }) => {
-  const navigate = useNavigate();
   const sliceProject = projects.slice(0, 4);
-
-  const handleBack = () => {
-    navigate(-1);
-  };
 
   return (
     <section id="project" className={` ${section ? "py-16" : "pb-16 pt-8 "}`}>
       <div className="container mx-auto">
-        <div className="px-6 md:px-28 2xl:px-44">
-          {!section && <button onClick={handleBack}></button>}
-        </div>
         <div className="flex justify-center mb-8">
-          {/* Text Project */}
           <div className="self-center px-6 lg:w-[70%]">
             <div
               data-aos="zoom-in-down"
