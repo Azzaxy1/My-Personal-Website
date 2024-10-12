@@ -12,13 +12,13 @@ const Experience = () => {
               <img
                 src={shape}
                 width={100}
-                className="absolute left-24 md:hidden top-2 lg:top-5 lg:w-32 "
+                className="absolute left-16 sm:left-52 md:left-64 lg:left-44 xl:left-64 2xl:left-[30rem] -z-10 top-2 lg:w-48 "
               />
-              <h1 className="z-10 text-3xl font-bold text-left text-white lg:text-5xl">
+              <h1 className="z-10 text-2xl font-bold text-left text-white lg:text-5xl sm:text-3xl md:text-4xl ">
                 🏢 Experience
               </h1>
             </div>
-            <p className="text-sm text-center text-gray-400 lg:text-xl 2xl:text-2xl">
+            <p className="text-sm text-center text-gray-400 lg:text-xl 2xl:text-2xl sm:text-base md:text-lg">
               I have gained valuable experience by actively participating in
               various activities that have contributed to my growth as a
               front-end developer.

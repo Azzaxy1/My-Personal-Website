@@ -37,7 +37,9 @@ const CardExperience = ({
           >
             {companyName}
           </h2>
-          <p className="my-3 text-sm text-white md:text-lg">{date}</p>
+          <p className="my-3 text-sm text-white sm:text-base md:text-lg">
+            {date}
+          </p>
           <p
             className={`px-2 py-2 my-2 text-white rounded-lg w-fit ${
               name === "Dicoding Indonesia" ? "bg-gray-900" : "bg-fuchsia-950"
@@ -48,7 +50,7 @@ const CardExperience = ({
           <div>
             {description.map((desc, index) => (
               <ul className="text-white" key={index}>
-                <li className="mb-3">• {desc}</li>
+                <li className="mb-3 text-sm md:text-base ">• {desc}</li>
               </ul>
             ))}
           </div>
