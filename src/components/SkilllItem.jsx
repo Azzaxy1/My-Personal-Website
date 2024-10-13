@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const CardSkills = ({ icon }) => {
+const SkillItem = ({ icon }) => {
   return (
     <div
       data-aos="fade-zoom-in"
@@ -25,11 +25,11 @@ const CardSkills = ({ icon }) => {
   );
 };
 
-CardSkills.propTypes = {
+SkillItem.propTypes = {
   icon: PropTypes.shape({
     image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
   }),
 };
 
-export default CardSkills;
+export default SkillItem;

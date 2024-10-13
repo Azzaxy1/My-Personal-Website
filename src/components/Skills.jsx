@@ -1,8 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import shape from "../assets/shape.png";
-import CardSkills from "./CardSkills";
 import { icons } from "@/utils";
+import SkillItem from "./SkilllItem";
 
 const Skills = () => {
   return (
@@ -50,7 +50,7 @@ const Skills = () => {
       >
         {icons.map((icon, index) => (
           <SwiperSlide key={index}>
-            <CardSkills icon={icon} />
+            <SkillItem icon={icon} />
           </SwiperSlide>
         ))}
       </Swiper>
