@@ -37,8 +37,10 @@ const Skills = () => {
           320: {
             slidesPerView: 4,
           },
+          640: {
+            slidesPerView: 8,
+          },
         }}
-        slidesPerView={8}
         modules={[Pagination, Autoplay]}
         autoplay={{
           delay: 2000,
