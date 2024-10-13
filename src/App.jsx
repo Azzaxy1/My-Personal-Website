@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import ProjectPage from "./pages/Project";
+import ProjectPage from "./pages/ProjectPage";
 import HomePage from "./pages/HomePage";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
