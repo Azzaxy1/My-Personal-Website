@@ -7,7 +7,7 @@ const CardSkills = () => {
       data-aos-easing="ease-in-back"
       data-aos-delay="300"
       data-aos-offset="0"
-      className="flex flex-row gap-10 mt-8 md:gap-10"
+      className="flex flex-row mt-8 md:gap-10"
     >
       {icons.map((icon, index) => (
         <div
