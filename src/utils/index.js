@@ -156,6 +156,4 @@ const experience = [
   },
 ];
 
-// const certifications = [];
-
 export { experience, icons, projects };

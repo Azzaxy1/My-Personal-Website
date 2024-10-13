@@ -1,4 +1,5 @@
 import AboutMe from "@/components/AboutMe";
+import CertificateList from "@/components/CertificateList";
 import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Project section={true} />
       <Skills />
       <Experience />
+      <CertificateList />
     </main>
   );
 };

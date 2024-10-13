@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import shape from "../assets/shape.png";
-import CardProject from "./CardProject";
 import { projects } from "@/utils";
 import PropTypes from "prop-types";
 import { LuArrowBigLeft, LuArrowBigRight } from "react-icons/lu";
+import Card from "./ui/Card";
 
 const Project = ({ section }) => {
   const sliceProject = projects.slice(0, 4);
@@ -41,28 +41,28 @@ const Project = ({ section }) => {
         <div className="flex flex-wrap justify-center">
           {section
             ? sliceProject.map((project, index) => (
-                <CardProject
-                  key={index}
-                  id={project.id}
-                  liveLink={project.liveLink}
-                  image={project.image}
-                  name={project.name}
-                  description={project.description}
-                  technologies={project.technologies}
-                  githubLink={project.githubLink}
-                />
+                <Card key={index} id={project.id}>
+                  <Card.Header image={project.image} name={project.name} />
+                  <Card.Body
+                    name={project.name}
+                    description={project.description}
+                    githubLink={project.githubLink}
+                    technologies={project.technologies}
+                    liveLink={project.liveLink}
+                  />
+                </Card>
               ))
             : projects.map((project, index) => (
-                <CardProject
-                  key={index}
-                  id={project.id}
-                  liveLink={project.liveLink}
-                  image={project.image}
-                  name={project.name}
-                  description={project.description}
-                  technologies={project.technologies}
-                  githubLink={project.githubLink}
-                />
+                <Card key={index} id={project.id}>
+                  <Card.Header image={project.image} name={project.name} />
+                  <Card.Body
+                    name={project.name}
+                    description={project.description}
+                    githubLink={project.githubLink}
+                    technologies={project.technologies}
+                    liveLink={project.liveLink}
+                  />
+                </Card>
               ))}
         </div>
         <div data-aos="fade-out" className={`mt-2 text-center`}>
