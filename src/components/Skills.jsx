@@ -1,6 +1,8 @@
-import Marquee from "react-fast-marquee";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
 import shape from "../assets/shape.png";
 import CardSkills from "./CardSkills";
+import { icons } from "@/utils";
 
 const Skills = () => {
   return (
@@ -12,11 +14,11 @@ const Skills = () => {
               data-aos="zoom-in"
               src={shape}
               width={80}
-              className="absolute -z-0 bg-opacity-10 top-2 lg:top-5 lg:w-32 "
+              className="absolute -z-0 bg-opacity-10 top-2 lg:top-5 lg:w-32"
             />
             <h1
               data-aos="zoom-in-up"
-              className="text-2xl font-bold text-left text-white lg:text-5xl sm:text-3xl md:text-4xl "
+              className="text-2xl font-bold text-left text-white lg:text-5xl sm:text-3xl md:text-4xl"
             >
               🎯 Tech Stack
             </h1>
@@ -30,9 +32,26 @@ const Skills = () => {
           </p>
         </div>
       </div>
-      <Marquee>
-        <CardSkills />
-      </Marquee>
+      <Swiper
+        breakpoints={{
+          320: {
+            slidesPerView: 4,
+          },
+        }}
+        slidesPerView={8}
+        modules={[Pagination, Autoplay]}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        loop={true}
+      >
+        {icons.map((icon, index) => (
+          <SwiperSlide key={index}>
+            <CardSkills icon={icon} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 };
