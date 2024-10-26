@@ -20,6 +20,7 @@ import MongoDB from "../assets/mongo.png";
 import BinarLogo from "../assets/binar-logo.png";
 import DicodingLogo from "../assets/dicoding.webp";
 
+// Project
 import CarRental from "../assets/img-project/car-rental.jpeg";
 import KKM01 from "../assets/img-project/kkm01.png";
 import DiscusZone from "../assets/img-project/discus-zone.png";
@@ -30,6 +31,21 @@ import JobFinder from "../assets/img-project/job-finder.png";
 import TodoZen from "../assets/img-project/todo-zen.png";
 import MovieApp from "../assets/img-project/movie-app.png";
 import LastKingAcademy from "../assets/img-project/last-king.png";
+
+// Certificate
+import certBinar from "./image/cert-binar.png";
+import certDicoding from "./image/cert-dicoding.png";
+import certLogikaPemrograman from "./image/cert-logika-pemrograman.png";
+import certReactExpert from "./image/cert-react-expert.png";
+import certFundamentalReact from "./image/cert-fundamental-react.png";
+import certAplikasiReact from "./image/cert-aplikasi-react.png";
+import certFrontendPemula from "./image/cert-frontend-pemula.png";
+import certJS from "./image/cert-js.png";
+import certPemrogramanWeb from "./image/cert-pemrograman-web.png";
+import certGitHub from "./image/cert-github.png";
+import certBackendPemula from "./image/cert-backend-pemula.png";
+import certMenitiKarier from "./image/cert-meniti-karier.png";
+import certDasarPemrograman from "./image/cert-dasar-pemorgraman.png";
 
 const imageTech = {
   htmlIcons,
@@ -70,4 +86,20 @@ const imageProjects = {
   MovieApp,
 };
 
-export { imageTech, imageCompanies, imageProjects };
+const imageCert = {
+  certBinar,
+  certDicoding,
+  certLogikaPemrograman,
+  certAplikasiReact,
+  certBackendPemula,
+  certDasarPemrograman,
+  certFrontendPemula,
+  certFundamentalReact,
+  certGitHub,
+  certJS,
+  certMenitiKarier,
+  certPemrogramanWeb,
+  certReactExpert,
+};
+
+export { imageTech, imageCompanies, imageProjects, imageCert };

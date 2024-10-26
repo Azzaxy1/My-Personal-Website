@@ -12,10 +12,10 @@ const HomePage = () => {
       <Navbar />
       <Hero />
       <AboutMe />
-      <Project section={true} />
+      <Project section />
       <Skills />
       <Experience />
-      <CertificateList />
+      <CertificateList section />
     </main>
   );
 };

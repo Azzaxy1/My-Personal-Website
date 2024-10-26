@@ -1,4 +1,9 @@
-import { imageCompanies, imageProjects, imageTech } from "@/assets/image";
+import {
+  imageCert,
+  imageCompanies,
+  imageProjects,
+  imageTech,
+} from "@/assets/image";
 
 const icons = [
   { id: 1, image: imageTech.jsIcons, name: "JavaScript" },
@@ -156,4 +161,85 @@ const experience = [
   },
 ];
 
-export { experience, icons, projects };
+const certificate = [
+  {
+    id: 1,
+    image: imageCert.certDicoding,
+    name: "MSIB Batch 6 Graduation Certificate",
+    publisher: "Dicoding Indonesia",
+  },
+  {
+    id: 2,
+    image: imageCert.certBinar,
+    name: "MSIB Batch 5 Graduation Certificate",
+    publisher: "Binar Academy",
+  },
+  {
+    id: 3,
+    image: imageCert.certReactExpert,
+    name: "Menjadi React Web Developer Expert",
+    publisher: "Dicoding Indonesia",
+  },
+  {
+    id: 4,
+    image: imageCert.certFundamentalReact,
+    name: "Belajar Fundamental Aplikasi Web dengan React",
+    publisher: "Dicoding Indonesia",
+  },
+  {
+    id: 5,
+    image: imageCert.certAplikasiReact,
+    name: "Belajar Membuat Aplikasi Web dengan React",
+    publisher: "Dicoding Indonesia",
+  },
+  {
+    id: 6,
+    image: imageCert.certFrontendPemula,
+    name: "Belajar Membuat Front-End Web untuk Pemula",
+    publisher: "Dicoding Indonesia",
+  },
+  {
+    id: 7,
+    image: imageCert.certJS,
+    name: "Belajar Dasar Pemrograman JavaScript",
+    publisher: "Dicoding Indonesia",
+  },
+  {
+    id: 8,
+    image: imageCert.certBackendPemula,
+    name: "Belajar Back-end Pemula dengan JavaScript",
+    publisher: "Dicoding Indonesia",
+  },
+  {
+    id: 9,
+    image: imageCert.certPemrogramanWeb,
+    name: "Belajar Dasar Pemrograman Web",
+    publisher: "Dicoding Indonesia",
+  },
+  {
+    id: 10,
+    image: imageCert.certGitHub,
+    name: "Belajar Dasar Git dengan GitHub",
+    publisher: "Dicoding Indonesia",
+  },
+  {
+    id: 11,
+    image: imageCert.certDasarPemrograman,
+    name: "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software",
+    publisher: "Dicoding Indonesia",
+  },
+  {
+    id: 12,
+    image: imageCert.certLogikaPemrograman,
+    name: "Pengenalan ke Logika Pemrograman (Programming Logic 101)",
+    publisher: "Dicoding Indonesia",
+  },
+  {
+    id: 13,
+    image: imageCert.certMenitiKarier,
+    name: "Meniti Karier sebagai Software Developer",
+    publisher: "Dicoding Indonesia",
+  },
+];
+
+export { experience, icons, projects, certificate };
