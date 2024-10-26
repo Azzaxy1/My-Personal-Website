@@ -29,7 +29,7 @@ const CertificateList = ({ section }) => {
             />
             <h1
               data-aos="zoom-in-up"
-              className="text-2xl font-bold text-left text-primary lg:text-5xl sm:text-3xl md:text-4xl"
+              className="text-2xl font-bold text-left text-[#357998] lg:text-5xl sm:text-3xl md:text-4xl"
             >
               🎖️🏅 Certificate
             </h1>
@@ -38,15 +38,22 @@ const CertificateList = ({ section }) => {
             data-aos="fade-up-right"
             className="text-sm text-left sm:text-base md:text-base lg:text-xl 2xl:text-2xl text-secondary"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
-            temporibus quam nesciunt, sed officia dolorem consequuntur sapiente
-            molestias odit similique.
+            These certifications showcase my commitment to continuous learning
+            and skill enhancement. They validate my proficiency in various
+            areas, helping to solidify the foundation of my professional
+            expertise.
           </p>
         </div>
         <div className="flex flex-wrap justify-center ">
           {section
             ? sliceCertificate.map((cert, index) => (
-                <Card key={index} id={cert.id} classname="mx-2 bg-white">
+                <Card
+                  key={index}
+                  id={cert.id}
+                  classname="mx-2 bg-white"
+                  dataAosEven="zoom-in-up"
+                  dataAosOdd="zoom-in-down"
+                >
                   <Card.Header
                     image={cert.image}
                     name={cert.name}
@@ -55,7 +62,13 @@ const CertificateList = ({ section }) => {
                 </Card>
               ))
             : certificate.map((cert, index) => (
-                <Card key={index} id={cert.id} classname="mx-2 bg-white">
+                <Card
+                  key={index}
+                  id={cert.id}
+                  classname="mx-2 bg-white"
+                  dataAosEven="zoom-in-up"
+                  dataAosOdd="zoom-in-down"
+                >
                   <Card.Header
                     image={cert.image}
                     name={cert.name}

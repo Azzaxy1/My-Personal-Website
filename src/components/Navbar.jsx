@@ -16,7 +16,7 @@ const Navbar = () => {
           }
         });
       },
-      { threshold: [0.1, 0.25, 0.5, 0.75] } // Monitor beberapa tingkat visibilitas
+      { threshold: [0.1, 0.25, 0.5, 0.75] }
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -72,6 +72,12 @@ const Navbar = () => {
             Experience
           </a>
           <a
+            className={`${isActive("certificate")} hover:text-sky-500`}
+            href="#certificate"
+          >
+            Certificate
+          </a>
+          <a
             className={`${isActive("contact")} hover:text-sky-500`}
             href="#contact"
           >
@@ -110,6 +116,11 @@ const Navbar = () => {
           <a className={`${isActive("experience")}`} href="#experience">
             <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
               Experience
+            </li>
+          </a>
+          <a className={`${isActive("certificate")}`} href="#certificate">
+            <li className="mx-4 px-2 rounded-lg md:px-16 py-[10px] hover:bg-sky-200 cursor-pointer">
+              Certificate
             </li>
           </a>
           <a className={`${isActive("contact")}`} href="#contact">

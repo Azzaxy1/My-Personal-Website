@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
-const Card = ({ children, id, classname }) => {
+const Card = ({ children, id, classname, dataAosOdd, dataAosEven }) => {
   return (
     <div
-      data-aos={id % 2 === 0 ? "fade-left" : "fade-right"}
+      data-aos={id % 2 === 0 ? dataAosEven : dataAosOdd}
       data-aos-easing="ease-in-sine"
       className={`max-w-sm  my-6 overflow-hidden transition-all duration-300 rounded-lg shadow-md sm:max-w-lg md:max-w-xl lg:max-w-lg 2xl:max-w-xl hover:shadow-lg hover:scale-105 hover:ease-linear ${classname}`}
     >
@@ -55,6 +55,8 @@ Card.propTypes = {
   id: PropTypes.number,
   children: PropTypes.node,
   classname: PropTypes.string,
+  dataAosOdd: PropTypes.string,
+  dataAosEven: PropTypes.string,
 };
 
 Header.propTypes = {

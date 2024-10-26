@@ -41,7 +41,13 @@ const Project = ({ section }) => {
         <div className="flex flex-wrap justify-center">
           {section
             ? sliceProject.map((project, index) => (
-                <Card key={index} id={project.id} classname="mx-6">
+                <Card
+                  key={index}
+                  id={project.id}
+                  classname="mx-6"
+                  dataAosEven="fade-left"
+                  dataAosOdd="fade-right"
+                >
                   <Card.Header
                     image={project.image}
                     name={project.name}
@@ -57,7 +63,13 @@ const Project = ({ section }) => {
                 </Card>
               ))
             : projects.map((project, index) => (
-                <Card key={index} id={project.id} classname="mx-6">
+                <Card
+                  key={index}
+                  id={project.id}
+                  classname="mx-6"
+                  dataAosEven="fade-left"
+                  dataAosOdd="fade-right"
+                >
                   <Card.Header
                     image={project.image}
                     name={project.name}
