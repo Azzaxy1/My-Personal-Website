@@ -2,22 +2,22 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
-const Card = ({ children, id }) => {
+const Card = ({ children, id, classname }) => {
   return (
     <div
       data-aos={id % 2 === 0 ? "fade-left" : "fade-right"}
       data-aos-easing="ease-in-sine"
-      className="max-w-sm mx-6 my-6 overflow-hidden transition-all duration-300 rounded-lg shadow-md sm:max-w-lg md:max-w-xl lg:max-w-lg 2xl:max-w-xl hover:shadow-lg hover:scale-105 hover:ease-linear"
+      className={`max-w-sm  my-6 overflow-hidden transition-all duration-300 rounded-lg shadow-md sm:max-w-lg md:max-w-xl lg:max-w-lg 2xl:max-w-xl hover:shadow-lg hover:scale-105 hover:ease-linear ${classname}`}
     >
       {children}
     </div>
   );
 };
 
-const Header = ({ image, name }) => {
+const Header = ({ image, name, classname }) => {
   return (
     <header>
-      <img src={image} alt={name} className="p-3 border-gray-300 rounded-2xl" />
+      <img src={image} alt={name} className={`${classname}`} />
     </header>
   );
 };
@@ -52,13 +52,16 @@ Card.Header = Header;
 Card.Body = Body;
 
 Card.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.number,
   children: PropTypes.node,
+  classname: PropTypes.string,
 };
 
 Header.propTypes = {
-  image: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
+  image: PropTypes.string,
+  name: PropTypes.string,
+  fileUrl: PropTypes.string,
+  classname: PropTypes.string,
 };
 
 Body.propTypes = {

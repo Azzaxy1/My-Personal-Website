@@ -1,6 +1,6 @@
 import aboutIcons from "../assets/icons/about-img.svg";
 import shape from "../assets/shape.png";
-import CV from "@/assets/cv-abdurrohmanazis.pdf";
+import CV from "@/assets/pdf/cv.pdf";
 
 const AboutMe = () => {
   return (
