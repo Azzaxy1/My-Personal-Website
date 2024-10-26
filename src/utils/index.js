@@ -166,7 +166,7 @@ const experience = [
     description: [
       "Developed a ToDo List Website with CRUD capabilities utilizing Tailwind CSS and React Js to complete the task.",
       "Building a Movie Rating Website in collaboration using Git with the team. Using React Js and Tailwind CSS, integrating with the Restful API, and implementing Redux state management.",
-      "Collaborate in developing the Course Web using Git with the Front End and Back End teams. Used Tailwind CSS, React Js, implemented Redux state management, and integrated with APIs from the Backend team as part of the final project completion.",
+      "Designed and developed a web course (Last King Academy) in three sprints using the Scrum Method (each sprint lasting two weeks), collaborating with the Front End and Back End teams via Git. Utilized Tailwind CSS, React.js, and implemented Redux for state management, integrating APIs from the Backend team as part of the final project.",
     ],
   },
   {
