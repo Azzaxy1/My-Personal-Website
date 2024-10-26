@@ -16,6 +16,7 @@ import ExpressIcons from "../assets/icons/express.svg";
 import NextUIIcon from "../assets/icons/next-ui.png";
 import CypressIcon from "../assets/icons/cypress.webp";
 import MongoDB from "../assets/mongo.png";
+import EJS from "../assets/icons/ejs.png";
 
 import BinarLogo from "../assets/binar-logo.png";
 import DicodingLogo from "../assets/dicoding.webp";
@@ -31,6 +32,9 @@ import JobFinder from "../assets/img-project/job-finder.png";
 import TodoZen from "../assets/img-project/todo-zen.png";
 import MovieApp from "../assets/img-project/movie-app.png";
 import LastKingAcademy from "../assets/img-project/last-king.png";
+import contactEase from "../assets/img-project/contact-ease.png";
+import tunanetraAudioBook from "../assets/img-project/tunanetra-audio-book.png";
+import suwitJawa from "../assets/img-project/suwit-jawa.png";
 
 // Certificate
 import certBinar from "./image/cert-binar.png";
@@ -66,6 +70,7 @@ const imageTech = {
   NextUIIcon,
   CypressIcon,
   MongoDB,
+  EJS,
 };
 
 const imageCompanies = {
@@ -84,6 +89,9 @@ const imageProjects = {
   TodoZen,
   LastKingAcademy,
   MovieApp,
+  contactEase,
+  tunanetraAudioBook,
+  suwitJawa,
 };
 
 const imageCert = {

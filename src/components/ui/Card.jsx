@@ -37,9 +37,11 @@ const Body = ({ description, technologies, githubLink, liveLink, name }) => {
         </div>
       </div>
       <div className="flex flex-row items-center justify-end gap-3">
-        <Link to={githubLink} target="_blank">
-          <FaGithub className="w-[25px] h-[25px] md:w-[30px] md:h-[30px] duration-75 hover:text-primary hover:transform hover:-translate-y-1 hover:transition-all" />
-        </Link>
+        {githubLink && (
+          <Link to={githubLink} target="_blank">
+            <FaGithub className="w-[25px] h-[25px] md:w-[30px] md:h-[30px] duration-75 hover:text-primary hover:transform hover:-translate-y-1 hover:transition-all" />
+          </Link>
+        )}
         <Link to={liveLink} target="_blank">
           <FaExternalLinkAlt className="w-[21px] h-[21px] duration-75 hover:transform hover:transition-all hover:-translate-y-1 text-[#357998] hover:text-primary" />
         </Link>

@@ -25,13 +25,13 @@ const AboutMe = () => {
             data-aos="fade-up-right"
             className="text-sm text-left sm:text-base md:text-base lg:text-xl 2xl:text-2xl text-secondary"
           >
-            I am a Bachelor of Informatics Engineering student at Banten Jaya
-            University. I have a strong interest in{" "}
+            I am a third year Informatics Engineering undergraduate student at
+            Banten Jaya University with a strong passion for{" "}
             <span className="font-semibold">Web Development</span>, using{" "}
             <span className="font-semibold">
               Next.Js, Express.Js and TypeScript
             </span>
-            . My skills include problem solving, critical thinking, time work,
+            . My skills include problem solving, critical thinking, teamwork,
             time management, and a desire to explore new knowledge.
           </p>
           <a href={CV} download>
