@@ -49,7 +49,7 @@ const Hero = () => {
           using
           <span className="font-semibold">
             {" "}
-            Next.Js, Express.Js and TypeScript
+            Next.Js, Express.Js and Vue.Js
           </span>{" "}
           for developing a website and web applications.
         </p>

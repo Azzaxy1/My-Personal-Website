@@ -17,7 +17,7 @@ const Card = ({ children, id, classname, dataAosOdd, dataAosEven }) => {
 const Header = ({ image, name, classname }) => {
   return (
     <header>
-      <img src={image} alt={name} className={`${classname}`} />
+      <img src={image} alt={name} className={`${classname} `} />
     </header>
   );
 };
@@ -42,9 +42,11 @@ const Body = ({ description, technologies, githubLink, liveLink, name }) => {
             <FaGithub className="w-[25px] h-[25px] md:w-[30px] md:h-[30px] duration-75 hover:text-primary hover:transform hover:-translate-y-1 hover:transition-all" />
           </Link>
         )}
-        <Link to={liveLink} target="_blank">
-          <FaExternalLinkAlt className="w-[21px] h-[21px] duration-75 hover:transform hover:transition-all hover:-translate-y-1 text-[#357998] hover:text-primary" />
-        </Link>
+        {liveLink && (
+          <Link to={liveLink} target="_blank">
+            <FaExternalLinkAlt className="w-[21px] h-[21px] duration-75 hover:transform hover:transition-all hover:-translate-y-1 text-[#357998] hover:text-primary" />
+          </Link>
+        )}
       </div>
     </footer>
   );
@@ -69,11 +71,11 @@ Header.propTypes = {
 };
 
 Body.propTypes = {
-  liveLink: PropTypes.string.isRequired,
+  liveLink: PropTypes.string,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
-  githubLink: PropTypes.string.isRequired,
+  githubLink: PropTypes.string,
 };
 
 export default Card;

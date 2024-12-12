@@ -30,7 +30,7 @@ const AboutMe = () => {
             <span className="font-semibold">Web Development</span>, particularly
             using{" "}
             <span className="font-semibold">
-              Next.Js, Express.Js and TypeScript
+              Next.Js, Express.Js and Vue.Js
             </span>
             . I bring skills in problem-solving, critical thinking, teamwork,
             and time management, paired with a continuous drive to explore and

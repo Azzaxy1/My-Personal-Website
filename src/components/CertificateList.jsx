@@ -72,7 +72,7 @@ const CertificateList = ({ section }) => {
                   <Card.Header
                     image={cert.image}
                     name={cert.name}
-                    classname="w-[320px] sm:w-[330px] 2xl:w-[442px]"
+                    classname="w-[320px] sm:w-[330px] 2xl:w-[442px] object-cover "
                   />
                 </Card>
               ))}

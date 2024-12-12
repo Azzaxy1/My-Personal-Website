@@ -17,9 +17,12 @@ import NextUIIcon from "../assets/icons/next-ui.png";
 import CypressIcon from "../assets/icons/cypress.webp";
 import MongoDB from "../assets/mongo.png";
 import EJS from "../assets/icons/ejs.png";
+import Vue from "../assets/icons/vue.png";
+import CI from "../assets/icons/ci.png";
 
 import BinarLogo from "../assets/binar-logo.png";
 import DicodingLogo from "../assets/dicoding.webp";
+import Sainstisindo from "../assets/sainstisindo.png";
 
 // Project
 import CarRental from "../assets/img-project/car-rental.jpeg";
@@ -35,6 +38,9 @@ import LastKingAcademy from "../assets/img-project/last-king.png";
 import contactEase from "../assets/img-project/contact-ease.png";
 import tunanetraAudioBook from "../assets/img-project/tunanetra-audio-book.png";
 import suwitJawa from "../assets/img-project/suwit-jawa.png";
+import GoEat from "../assets/img-project/go-eat.png";
+import DashboardAdmin from "../assets/img-project/dashboard-admin.png";
+import MERNNexaBlog from "../assets/img-project/nexablog.png";
 
 // Certificate
 import certBinar from "./image/cert-binar.png";
@@ -50,6 +56,16 @@ import certGitHub from "./image/cert-github.png";
 import certBackendPemula from "./image/cert-backend-pemula.png";
 import certMenitiKarier from "./image/cert-meniti-karier.png";
 import certDasarPemrograman from "./image/cert-dasar-pemorgraman.png";
+import certDicodingCoaching from "./image/cert-dicoding-coaching.png";
+import certDicodingCoachingHTML from "./image/cert-dicoding-html.png";
+import certEdspertReact from "./image/cert-edspert-react.png";
+import certFullstack from "./image/cert-fullstack.png";
+import certRevou from "./image/cert-revou-se.png";
+import certMySkillHTML from "./image/cert-myskill-html.png";
+import certMySkillSemantic from "./image/cert-myskill-semantic.png";
+import certMySkillFunc from "./image/cert-myskill-func.png";
+import certMySkillDOM from "./image/cert-myskill-dom.png";
+import certMySkillArray from "./image/cert-arrayjs.png";
 
 const imageTech = {
   htmlIcons,
@@ -71,11 +87,14 @@ const imageTech = {
   CypressIcon,
   MongoDB,
   EJS,
+  Vue,
+  CI,
 };
 
 const imageCompanies = {
   BinarLogo,
   DicodingLogo,
+  Sainstisindo,
 };
 
 const imageProjects = {
@@ -92,6 +111,9 @@ const imageProjects = {
   contactEase,
   tunanetraAudioBook,
   suwitJawa,
+  GoEat,
+  DashboardAdmin,
+  MERNNexaBlog,
 };
 
 const imageCert = {
@@ -108,6 +130,16 @@ const imageCert = {
   certMenitiKarier,
   certPemrogramanWeb,
   certReactExpert,
+  certDicodingCoaching,
+  certDicodingCoachingHTML,
+  certEdspertReact,
+  certFullstack,
+  certRevou,
+  certMySkillHTML,
+  certMySkillSemantic,
+  certMySkillFunc,
+  certMySkillDOM,
+  certMySkillArray,
 };
 
 export { imageTech, imageCompanies, imageProjects, imageCert };
