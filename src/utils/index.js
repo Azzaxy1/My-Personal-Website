@@ -198,19 +198,6 @@ const experience = [
   },
   {
     id: 2,
-    name: "Binar Academy",
-    image: imageCompanies.BinarLogo,
-    companyName: "PT Lentera Benderang",
-    date: "Agust 2023 - Des 2023",
-    position: "Frontend Developer",
-    description: [
-      "Developed a ToDo List Website with CRUD capabilities utilizing Tailwind CSS and React Js to complete the task.",
-      "Building a Movie Rating Website in collaboration using Git with the team. Using React Js and Tailwind CSS, integrating with the Restful API, and implementing Redux state management.",
-      "Designed and developed a web course (Last King Academy) in three sprints using the Scrum Method (each sprint lasting two weeks), collaborating with the Front End and Back End teams via Git. Utilized Tailwind CSS, React.js, and implemented Redux for state management, integrating APIs from the Backend team as part of the final project.",
-    ],
-  },
-  {
-    id: 3,
     name: "Dicoding Indonesia",
     image: imageCompanies.DicodingLogo,
     companyName: "PT Presentologics",
@@ -221,6 +208,19 @@ const experience = [
       "Develop a React-powered NotesApp SPA website and incorporate APIs.",
       "Build a ForumApp website using Redux state management and React.js, and connect it with APIs.",
       "Collaborated in developing a Job Finder Platform for Job Portal sites using Git with Back End. Used Next UI, React Js, implemented Redux state management, and integrated with APIs from the Backend team as part of the Capstone Project completion.",
+    ],
+  },
+  {
+    id: 3,
+    name: "Binar Academy",
+    image: imageCompanies.BinarLogo,
+    companyName: "PT Lentera Benderang",
+    date: "Agust 2023 - Des 2023",
+    position: "Frontend Developer",
+    description: [
+      "Developed a ToDo List Website with CRUD capabilities utilizing Tailwind CSS and React Js to complete the task.",
+      "Building a Movie Rating Website in collaboration using Git with the team. Using React Js and Tailwind CSS, integrating with the Restful API, and implementing Redux state management.",
+      "Designed and developed a web course (Last King Academy) in three sprints using the Scrum Method (each sprint lasting two weeks), collaborating with the Front End and Back End teams via Git. Utilized Tailwind CSS, React.js, and implemented Redux for state management, integrating APIs from the Backend team as part of the final project.",
     ],
   },
 ];
